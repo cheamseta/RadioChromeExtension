@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="5.css" />
+    <style>
+        body
+        {
+            font-family: Tahoma;
+            min-width: 357px;
+            overflow-x: hidden;
+            font-size: 14px;
+        }
+
+        .selected
+        {
+            background: -webkit-gradient(linear, left top, left bottom, from(#8bc7df),to(#40a1ca));
+        }
+
+        ::-webkit-scrollbar
+        {
+            display: none;
+        }
+
+        .textMiddle
+        {
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+
+        .DoneButton
+        {
+            position: relative;
+            text-decoration: none;
+            background-color: #d8eaff;
+            font-family: 'Tahoma';
+            font-weight: 700;
+            font-size: 14px;
+            display: block;
+            padding: 10px;
+            -webkit-border-radius: 8px;
+            border-radius: 8px;
+            -webkit-box-shadow: 0px 9px 0px #0094ff, 0px 9px 25px rgba(0,0,0,.7);
+            box-shadow: 0px 9px 0px #0094ff, 0px 9px 25px rgba(0,0,0,.7);
+            width: 190px;
+            margin: 30px auto;
+            text-align: center;
+            -webkit-transition: all .1s ease;
+            -o-transition: all .1s ease;
+            transition: all .1s ease;
+            cursor: pointer;
+        }
+
+            .DoneButton:active
+            {
+                -webkit-box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+                box-shadow: 0px 3px 0px rgba(219,31,5,1), 0px 3px 6px rgba(0,0,0,.9);
+                position: relative;
+                top: 6px;
+            }
+    </style>
+
+    <script src="3.js"></script>
+    <script src="4.js"></script>
+    <script src="1.js"></script>
+</head>
+<body>
+    <div data-role="content">
+
+        <div style="text-align: center;">
+            <img src="rfa.jpg" />
+            <img src="voa.jpg" />
+            <img src="abc.jpg" />
+        </div>
+        <div style="text-align: center">
+            <a href="#positionWindow" data-rel="popup" data-position-to="window">
+                <img alt="" src="title.png" />
+            </a>
+            <div data-role="popup" id="positionWindow" class="ui-content">
+                <p>Hi !!!! This is TheBadOne. I am a Cambodian developer. This is a chrome extension for playing foreign radio in Khmer language. Available only latest news!!!</p>
+
+                <p>
+                    <b>Facebook Page:</b> Facebook.com/cheamseta<br />
+                   <b>Email:</b> cheamseta@gmail.com<br />
+                </p>
+                <img src="shadow.png" />
+                <b>Sponsor :</b> www.phsarplus.com<br />
+                <b>Developed By:</b> TheBadOne<br />
+                <img src="smallLogo.jpg" />
+            </div>
+            <img src="shadow.png" />
+        </div>
+        <div id="tabRFA" style="text-align: center">
+            <p id="lblTitle">RFA Radio</p>
+            <a id="btnPlayRFA" class="DoneButton">ស្តាប់វិទ្យុ RFA</a>
+        </div>
+
+        <div id="Div1" style="text-align: center">
+            <p id="lblTitleVoaM">VOA Radio</p>
+            <a id="btnPlayVOAm" class="DoneButton">ស្តាប់វិទ្យុ VOA</a>
+            <p id="lblTitleVoaE">VOA Radio</p>
+            <a id="btnPlayVOAe" class="DoneButton">ស្តាប់វិទ្យុ VOA</a>
+        </div>
+
+        <div id="Div2" style="text-align: center">
+            <p id="lblTitleABC">ABC Radio</p>
+            <a id="btnPlayABC" class="DoneButton">ស្តាប់វិទ្យុ ABC</a>
+        </div>
+        <br />
+        <div style="text-align: center" data-position="fixed" data-role="footer" data-theme="c">
+            <a target="_blank" href="http://www.smarterasp.net/index?r=cheamseta">
+                <img src="http://www.smarterasp.net/affiliate/234x60.gif" border="0"/></a>
+             <a target="_blank" href="http://www.phsarplus.com"><img src="ad.jpg" /></a>
+        </div>
+    </div>
+
+</body>
+</html>
